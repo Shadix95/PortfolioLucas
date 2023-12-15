@@ -1,0 +1,611 @@
+/*elmts generaux */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    /*
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;*/
+}
+    
+
+@media screen and (max-width: 1350px){
+    #logoOffice {
+        display: none;
+        visibility: hidden;
+    }
+    #logoBNPPF2{
+        display: none;
+        visibility: hidden;
+    }
+    #footer{
+        display: none;
+        visibility: hidden;
+    }
+    #cetelem{
+        display: none;
+        visibility: hidden;
+    }
+    #logoBNP{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1200px){
+   /*  body.zoom{
+        zoom: 85%;
+    } */
+    #formresponsive{
+        width: 50vw;
+        max-width: 50vw;
+    }
+    #logoOffice {
+        display: none;
+        visibility: hidden;
+    }
+    #logoBNPPF2{
+        display: none;
+        visibility: hidden;
+    }
+    #footer{
+        display: none;
+        visibility: hidden;
+    }
+    #cetelem{
+        display: none;
+        visibility: hidden;
+    }
+    #logoBNP{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    #cetelem{
+        display: none;
+        visibility: hidden;
+
+    }
+    #logoOffice2{
+        display: none;
+        visibility: hidden;
+    }
+
+    #logo{
+        display: none;
+        visibility: hidden;
+    }
+    #logoOffice {
+        display: none;
+        visibility: hidden;
+    }
+    #logoBNPPF2{
+        display: none;
+        visibility: hidden;
+    }
+    #footer{
+        display: none;
+        visibility: hidden;
+    }
+    #cetelem{
+        display: none;
+        visibility: hidden;
+    }
+    #logoBNP{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 50px){
+    #logoOffice2{
+        display: none;
+        visibility: hidden;
+    }   
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+/*fin elmts generaux */
+
+
+
+#enregistrement{
+    margin-top: 30px;
+    margin-right: 5vw;
+    margin-left: auto;
+}
+#enregistrement button{
+    margin-left: 15px;
+    background-color: #027750;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(52, 105, 66);
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+    margin-top: 25vh;
+}
+
+#wizard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 20px;
+    text-decoration-color: rgb(214, 214, 214);
+}
+#wizard p{
+    padding-left: 15px;
+    color: rgb(46, 46, 28);
+}
+
+.credit{
+    margin-right: 50px;
+}
+
+
+
+.credit p{
+    margin: 3px;
+    color: rgb(46, 46, 28);
+}
+
+/*barre de recherche*/
+#searchbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#query{
+    height: 3em;
+    width: 29em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(156, 152, 152, 0.486);
+    
+}
+
+#searchbox button{
+    margin-left: 10px;
+    background-color: #027750;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+    
+    
+}
+/* Fin barre de recherche*/
+
+/*tableau de topics */
+#topics{
+    margin:0px;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    }
+
+#menutableau{
+    background-color: rgb(2, 105, 2);
+    height: 5vh;
+}
+.C1{
+    color: white;
+}
+.C2{
+    color: white;
+}
+.C3{
+    width: 9%;
+    color: white;
+}
+.C4{
+    width: 10%;
+    color: white;
+}
+.C5{
+    width: 7%;
+    color: white;
+}
+
+.C6{
+    width: 7%;
+    color: white;
+}
+
+.cadre-table-scroll {
+    display: block;
+    overflow-y: scroll;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    max-height: 80vh;
+    box-shadow: 5px 5px 15px #000000;
+    margin-bottom: auto;
+    border-radius: 20px;
+    border: 5px solid rgb(2, 105, 2);
+  
+    
+  } */
+  .table-scroll{
+    
+    display: block;
+    empty-cells: show;
+    
+ 
+    border-spacing: 0;
+    border: 1px solid;
+  } 
+
+  
+  .table-scroll thead th {
+    position: sticky;
+    top: 0;
+    
+  }
+  .table-scroll tfoot td {
+    position: sticky;
+    bottom: 0;
+  }
+
+
+
+
+#trier{
+    border: none;
+    margin-left: 5px;
+    background-color: white;
+}
+
+table{
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    width: 90vw;
+    
+    table-layout: fixed;
+  
+    
+  }
+  
+th, td{
+    border: 1px solid rgb(2, 105, 2);
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    
+}
+tbody tr{
+    margin-top: -5px;
+    overflow: hidden;
+}
+/*Fin tableau de topics */
+
+#formulaire{
+    margin:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    flex-grow: 1;
+    margin-top: 20px;
+    
+    
+    }
+
+.contenairformu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10vw;
+    margin-top: 9vh;
+    margin-bottom: 9vh;
+}
+
+.separation {
+    width: 100%;
+    height: 10px;
+    background-color: #c9c9c9;
+    margin-bottom: 3vh;
+  }
+
+#formutop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: rgb(124, 197, 124);   */
+    gap: 10px;
+    margin-left: 25px;
+    border-radius: 15vh;
+    border: solid darkgreen 3px;
+    box-shadow: 5px 5px 15px #000000;
+    margin-right: 23px;
+    
+    }
+
+label{
+    margin-right: 10%;
+}
+
+textarea{
+  background-color: #e1e1e1;
+  border: 2px solid #c9c9c9;
+  outline-color: #027750;
+  border-radius: 5px;
+  resize: none;
+  /*width: 15vw;
+  height: 4vh;*/
+}
+
+.form-group .destination{
+    height: 35px;
+}
+
+.form-group{
+    width: 40vw;
+    min-width: 20vw;
+    
+}
+
+.form-group select{  
+  border: 2px solid #c9c9c9;
+  outline-color: #027750;
+  border-radius: 5px;
+  color: #027750;
+  
+  
+}
+
+
+#formudate{
+    width: 30vw;
+}
+.form-group input{  
+    border: 2px solid #c9c9c9;
+    outline-color: #027750;
+    border-radius: 5px;
+    /*width: 15vw;
+    height: 4vh;*/
+    color: #027750;
+  }
+
+    
+input[type="submit"] {
+    margin-top: 10px;
+    }
+
+#boutonform{
+    margin-left: auto;
+    background-color: transparent;
+}
+#boutonform button{
+    margin-right: 3px;
+    background-color: #027750;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#boutonform input{
+    background-color: #027750;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+    
+}
+
+input:hover {
+    transform: scale(1.05);
+}
+
+#boutonRetourSave{
+    display: flex;
+    justify-content: flex-end;
+}
+#h1form{
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+#formIntro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+#formIntro h1{
+    margin: auto;
+}
+
+#logoOffice{
+    margin-left: auto;
+    width: 180px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    margin-bottom: 8px;
+}
+
+#logoBNPPF2{
+    margin-top: 30px;
+    margin-bottom: -55px;
+}
+
+.centerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoOffice2{
+    margin-left: auto;
+    width: 180px;
+    margin-top: -75px;
+    margin-bottom: 8px;
+}
+
+.form-group {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+  }
+
+.form-group label{
+    width: 10vw;
+    text-align: left;
+    padding-right: 10px;
+    font-weight: bold;
+
+}
+
+.form-group input{
+    flex: 1;
+    padding: 5px;
+    height: 25px;
+    width: 30vw;
+    border-radius: 5px;
+}
+
+.form-group textarea{
+    flex: 1;
+    padding: 5px;
+    height: 100px;
+    width: 30vw;
+    border-radius: 5px;
+
+}
+
+.form-group select{
+    flex: 1;
+    padding: 5px;
+    height: 35px;
+    width: 30.5vw;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* popup */
+
+
+  .popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    border: solid green 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0,1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #000000;
+    visibility: hidden;
+    transition: transform 0.5s , top 0.5s;
+    box-shadow: 5px 5px 15px #000000;
+    
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #027750;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+
+tr:nth-child(odd):hover {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even):hover {
+    background-color: #ffffff;
+}
+
+tr:nth-child(odd){
+  background-color: light;
+}
+
+tr:nth-child(even){
+    background-color: rgb(255, 255, 255);
+}
