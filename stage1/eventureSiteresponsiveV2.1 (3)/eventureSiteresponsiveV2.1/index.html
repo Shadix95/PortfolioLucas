@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>EVE - topics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="icocet.png" />
+  <script type="text/javascript" src="search.js" ></script>
+  <script type="text/javascript" src="trie.js" ></script>
+  <script type="text/javascript" src="popup.js" ></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+
+  
+  <form id="searchbox"> 
+    <input type="search" id="query" name="q" class="light-table-filter" data-table="table-scroll" placeholder="Rechercher...">
+    <button>Rechercher</button>
+  </form>
+  <div class="centerLogo">
+    <div id="logo">
+    <h1>EVE</h1>
+    <img id="logoBNP" src="logo.png" height ="55" />
+    </div>
+    <img id="logoOffice2" src="dataOffice.png"  />
+    </div>
+
+  <div id="topics">
+  <div class="cadre-table-scroll">
+    <table class="table-scroll">
+        <thead>
+        <tr id="menutableautr">
+            <th id="menutableau" class="C1"> Nom <button id="trier" type="button"> <img src="fleche.png" height ="5" /></button></th>
+            <th id="menutableau" class="C2"> Description <button id="trier" type="button"> <img src="fleche.png" height ="5" /></button></th>
+            <th id="menutableau" class="C3"> Date de début <button id="trier" type="button"> <img src="fleche.png" height ="5" /></button> </th>
+            <th id="menutableau" class="C4"> Date de fin <button id="trier" type="button"> <img src="fleche.png" height ="5" /></button></th>
+            <th id="menutableau" class="C5"> Etat <button id="trier" type="button"> <img src="fleche.png" height ="5" /></button></th>
+            <th id="menutableau" class="C6"> Archiver </th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> ADDDDDDionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">VNomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> zzzzzzzzzzzzzeariptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/23 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            <tr>
+                <td><a href="formulaire.html">ANomNOm</a></td>
+                <td id="description"> DescriptionDescriptionDescriptionDescription  </td>
+                <td> 21/04/24 </td>
+                <td> 05/06/2023 </td>
+                <td> En cours </td>
+                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+            </tr>
+            
+    
+            
+        </tbody>
+
+        
+    </tbody>
+    </table>
+
+ 
+  </div>
+  </div>
+  <div id="enregistrement">
+    <a href="formulaire.html"><button> Ajouter </button></a>
+  </div>
+
+  
+
+  <footer id="footer">
+    <div id="wizard">
+        <img src="Icon-Space-Shuttle-317704.svg.png" height ="55" />
+        <p>squad discovery</p>
+    </div>
+    <div class="credit">
+        <p>  page author :Delière / Vauthier / Azer</p>
+        <p>  version of 22/06/2023</p>
+        <p>  contact : Julien Deschamps</p>
+    </div>
+  </footer>
+  </div> 
+</body>
+
+<script>
+
+    let popup = document.getElementById("popup");
+    
+    function openPopup(){
+       popup.classList.add("open-popup");
+    }
+    
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    
+    
+    </script>
+    
+</html>
