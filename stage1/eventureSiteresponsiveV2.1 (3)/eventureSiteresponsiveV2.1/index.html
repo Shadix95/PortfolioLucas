@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <title>EVE - topics</title>
@@ -10,7 +11,9 @@
   <script type="text/javascript" src="popup.js" ></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
+
   <div class="container">
 
   
@@ -18,17 +21,19 @@
     <input type="search" id="query" name="q" class="light-table-filter" data-table="table-scroll" placeholder="Rechercher...">
     <button>Rechercher</button>
   </form>
-  <div class="centerLogo">
-    <div id="logo">
-    <h1>EVE</h1>
-    <img id="logoBNP" src="logo.png" height ="55" />
-    </div>
-    <img id="logoOffice2" src="dataOffice.png"  />
+
+    <div class="centerLogo">
+        <div id="logo">
+            <h1>EVE</h1>
+            <img id="logoBNP" src="logo.png" height ="55" />
+        </div>
+        <img id="logoOffice2" src="dataOffice.png"  />
     </div>
 
   <div id="topics">
   <div class="cadre-table-scroll">
     <table class="table-scroll">
+        
         <thead>
         <tr id="menutableautr">
             <th id="menutableau" class="C1"> Nom <button id="trier" type="button"> <img src="fleche.png" height ="5" /></button></th>
@@ -60,7 +65,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -68,7 +78,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -76,7 +91,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -84,7 +104,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -92,7 +117,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -100,7 +130,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">VNomNOm</a></td>
@@ -108,7 +143,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -116,7 +156,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -124,7 +169,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -132,7 +182,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -140,7 +195,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -148,7 +208,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -156,7 +221,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -164,7 +234,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -172,7 +247,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -180,7 +260,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -188,7 +273,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -196,7 +286,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -204,7 +299,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -212,7 +312,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -220,7 +325,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -228,7 +338,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -236,7 +351,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -244,7 +364,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -252,7 +377,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -260,7 +390,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -268,7 +403,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -276,7 +416,12 @@
                 <td> 21/04/23 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             <tr>
                 <td><a href="formulaire.html">ANomNOm</a></td>
@@ -284,7 +429,12 @@
                 <td> 21/04/24 </td>
                 <td> 05/06/2023 </td>
                 <td> En cours </td>
-                <td> <button onclick="popUp()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <td> <button onclick="openPopup()" type="button"> <img src="poubelle.png" height ="25" /> </button> </td>
+                <div class="popup" id="popup">
+                    <p>Confirmez vous l'archivage du Topic XXXXX ?</p>
+                    <button type="button" onclick="closePopup()"> Oui </button>
+                    <button type="button" onclick="closePopup()"> Non </button>
+                </div>
             </tr>
             
     
@@ -310,7 +460,7 @@
         <p>squad discovery</p>
     </div>
     <div class="credit">
-        <p>  page author :Delière / Vauthier / Azer</p>
+        <p>  page author : Azer</p>
         <p>  version of 22/06/2023</p>
         <p>  contact : Julien Deschamps</p>
     </div>
@@ -330,7 +480,7 @@
         popup.classList.remove("open-popup");
     }
     
-    
-    </script>
+
+</script>
     
 </html>
