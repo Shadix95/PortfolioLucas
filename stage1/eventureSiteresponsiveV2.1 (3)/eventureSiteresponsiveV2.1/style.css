@@ -204,8 +204,7 @@ footer{
     outline: none;
     cursor: pointer;
     transition: transform 0.5s;
-    
-    
+     
 }
 /* Fin barre de recherche*/
 
@@ -257,58 +256,45 @@ footer{
     margin-bottom: auto;
     border-radius: 20px;
     border: 5px solid rgb(2, 105, 2);
-  
-    
-  } */
-  .table-scroll{
-    
+} */
+
+.table-scroll {
     display: block;
     empty-cells: show;
-    
- 
     border-spacing: 0;
     border: 1px solid;
-  } 
+} 
 
   
-  .table-scroll thead th {
+.table-scroll thead th {
     position: sticky;
     top: 0;
     
-  }
-  .table-scroll tfoot td {
+}
+.table-scroll tfoot td {
     position: sticky;
     bottom: 0;
-  }
+}
 
-
-
-
-#trier{
+#trier  {
     border: none;
     margin-left: 5px;
     background-color: white;
 }
 
-table{
-
+table   {
     border-collapse: separate;
     border-spacing: 0;
-
     width: 90vw;
-    
     table-layout: fixed;
+     
+}
   
-    
-  }
-  
-th, td{
+th, td  {
     border: 1px solid rgb(2, 105, 2);
     padding: 10px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    
-    
+    text-overflow: ellipsis;    
 }
 tbody tr{
     margin-top: -5px;
@@ -348,15 +334,13 @@ tbody tr{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-color: rgb(124, 197, 124);   */
     gap: 10px;
     margin-left: 25px;
     border-radius: 15vh;
     border: solid darkgreen 3px;
     box-shadow: 5px 5px 15px #000000;
     margin-right: 23px;
-    
-    }
+}
 
 label{
     margin-right: 10%;
@@ -368,51 +352,41 @@ textarea{
   outline-color: #027750;
   border-radius: 5px;
   resize: none;
-  /*width: 15vw;
-  height: 4vh;*/
 }
 
 .form-group .destination{
     height: 35px;
 }
 
-.form-group{
+.form-group {
     width: 40vw;
     min-width: 20vw;
     
 }
 
-.form-group select{  
+.form-group select  {  
   border: 2px solid #c9c9c9;
   outline-color: #027750;
   border-radius: 5px;
   color: #027750;
-  
-  
 }
-
 
 #formudate{
     width: 30vw;
 }
-.form-group input{  
+
+.form-group input   {  
     border: 2px solid #c9c9c9;
     outline-color: #027750;
     border-radius: 5px;
-    /*width: 15vw;
-    height: 4vh;*/
     color: #027750;
-  }
-
-    
-input[type="submit"] {
-    margin-top: 10px;
-    }
+}
 
 #boutonform{
     margin-left: auto;
     background-color: transparent;
 }
+
 #boutonform button{
     margin-right: 3px;
     background-color: #027750;
@@ -554,8 +528,6 @@ a{
 
 
 /* popup */
-
-
   .popup {
     width: 400px;
     background: #fff;
@@ -571,7 +543,6 @@ a{
     visibility: hidden;
     transition: transform 0.5s , top 0.5s;
     box-shadow: 5px 5px 15px #000000;
-    
 }
 
 .open-popup{
@@ -592,20 +563,4 @@ a{
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
-}
-
-tr:nth-child(odd):hover {
-    background-color: #ffffff;
-}
-
-tr:nth-child(even):hover {
-    background-color: #ffffff;
-}
-
-tr:nth-child(odd){
-  background-color: light;
-}
-
-tr:nth-child(even){
-    background-color: rgb(255, 255, 255);
 }
