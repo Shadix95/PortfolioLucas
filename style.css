@@ -256,25 +256,13 @@ h2	{
 
 /* 4eme PAGE */
 
-.page-content .projects-section .tp7 embed {
-	width: 850;
-	height: 800;
+.page-content .projects-section .card-img-top{
+	width: 150px;
 }
 
-.page-content .projects-section .parking embed{
-	width: 850;
-	height: 800;
-}
 
-.page-content .projects-section .crosl embed{
-	width: 850;
-	height: 800;
-}
 
-.page-content .projects-section .tsrp embed{
-	width: 850;
-	height: 800;
-}
+
 
 
 
