@@ -260,6 +260,18 @@ h2	{
 	width: 250px;
 }
 
+.page-content .projects-section .card-img-top1{
+	width: 250px;
+	height: 225px;
+}
+
+
+
+.page-content .projects-section .card-img-top3{
+	width: 250px;
+	height: 225px;
+}
+
 .page-content .projects-section .card-body a{
 	color: white;
 	text-decoration: none;
