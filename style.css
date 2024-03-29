@@ -241,19 +241,6 @@ h2	{
 }
 
 
-
-/* 3eme PAGE */
-
-.lm {
-	text-align: center;
-}
-
-.lm embed {
-	width: 800;
-	height: 850;
-	align-items: center;
-}
-
 /* 4eme PAGE */
 
 
@@ -261,7 +248,6 @@ h2	{
 	width: 700px;
 	height: 800px;
 }
-
 
 
 .page-content .projects-section .card-img-top4{
@@ -292,9 +278,6 @@ h2	{
 	text-decoration: none;
 	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(17, 55, 56) 50%, #00ffff 100%);
 }
-
-
-
 
 
 
