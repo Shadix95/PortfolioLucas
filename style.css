@@ -305,10 +305,38 @@ h2	{
 	color: #ffffff;
 }
 
+
+.mission h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vw;
+}
+
+.mission p {
+	font-size: 1.2em;
+}
+
+.mission span {
+	color: red;
+}
+
+
+
+
+
+
 /* 6eme PAGE */
 
 .veille a {
 	color: white;
+}
+
+.veille h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vw;
 }
 
 
