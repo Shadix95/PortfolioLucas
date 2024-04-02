@@ -146,7 +146,7 @@ h2	{
 
 .page-content header button:hover {
 	color: #ccc;
-	border-bottom-color: #000;
+	border-bottom-color: #000000;
 }
 
 
@@ -278,6 +278,8 @@ h2	{
 	text-decoration: none;
 	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(17, 55, 56) 50%, #00ffff 100%);
 }
+
+
 
 
 
