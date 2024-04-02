@@ -282,7 +282,6 @@ h2	{
 
 
 
-
 /* 5eme PAGE */
 
 .stage embed {
@@ -321,7 +320,25 @@ h2	{
 	color: red;
 }
 
+.stage #boutonstage1{
+	background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(17, 55, 56) 50%, #00ffff 100%);
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+}
 
+.stage :hover{
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	box-shadow: 3px 3px 3px #ffffff;
+	color: #000000;
+	text-align: center;
+}
 
 
 
@@ -343,8 +360,48 @@ h2	{
 	margin-left: 30px;
 }
 
+.veille a {
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+.veille :hover {
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+	color: #000000;
+	text-align: center;
+}
+
 .crypto p {
 	font-size: 1.1em;
+}
+
+.bon-outils #img1 {
+	width: 1345px;
+}
+
+.bon-outils #img3 {
+	width: 611px;
+}
+
+.bon-outils #boutonveille {
+	background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(17, 55, 56) 50%, #00ffff 100%);
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.bon-outils :hover{
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	box-shadow: 3px 3px 3px #ffffff;
+	color: #000000;
+	text-align: center;
 }
 
 
@@ -370,6 +427,39 @@ h2	{
 	color: #ffffff;
 	margin-left: 100px;
 }
+
+.page-content .projects-section #boutonstage2{
+	color: #ffffff;
+	margin-left: 230px;
+}
+
+
+.page-content .projects-section #automat{
+	width: 1000px;
+	height: 1000px;
+}
+
+
+.projects-section #boutonstage2 {
+	background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(17, 55, 56) 50%, #00ffff 100%);
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.projects-section :hover{
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	box-shadow: 3px 3px 3px #ffffff;
+	color: #000000;
+	text-align: center;
+}
+
 
 
 
